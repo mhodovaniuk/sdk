@@ -330,6 +330,12 @@ type (
 		Legend          struct {
 			Show bool `json:"show"`
 		} `json:"legend"`
+		Options struct {
+			Calculate bool `json:"calculate"`
+			YAxis     struct {
+				Unit string `json:"unit"`
+			} `json:"yAxis"`
+		} `json:"options"`
 		ReverseYBuckets bool     `json:"reverseYBuckets"`
 		Targets         []Target `json:"targets,omitempty"`
 		Tooltip         struct {
